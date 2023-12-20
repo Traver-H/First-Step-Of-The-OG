@@ -4,45 +4,75 @@
     <title>호나우지뉴</title>
     <meta charset="utf-8">
     <style>
-        #active{
-            color:red;
+        #grid{
+            display:grid;
+            grid-template-columns:200px 1fr;
         }
-        a {
+        #grid ol{
+            border-right:1px solid gray;
+            width:120px; 
+            margin:0;
+            padding-left:35px;
+            padding-top:10px;    
+        }
+        #grid article{
+            padding-left:0px;
+        }
+        body{
+            margin:0;
+        }
+        a{
             color:black;
             text-decoration: none;
         }
-        h1 {
+        h1{
             text-align: center;
-            font-size: 40px;
+            border-bottom:1px solid gray;
+            margin:0;
+            padding:20px;
+            padding-left:3px;
+        }
+        @media(max-width:670px){
+            #grid{
+                display:block;
+            }
+            #grid ol{
+                border-right:none;
+            }
+            h1{
+                border-bottom:none;
+            }
         }
     </style>
 </head>
-
 <body>
     <h1><a href="index.html">호나우지뉴</a></h1>
-    <p>
-    <ol>
-        <li><a href="1.html" class="saw" id="active">개요</a><br></li>
-        <li><a href="2.html">커리어</a><br></li>
-        <li><a href="3.html">플레이 스타일</a></li>
-    </ol>
-    </p>
-    <h2>개요</h2>
-    <br>
-    <img src="ronaldinho.jpg" width="450">
-    <p>
-    
-    <a href="https://namu.wiki/w/%EB%B8%8C%EB%9D%BC%EC%A7%88" target="blank" title="나무위키 브라질"><strong>브라질</strong></a>의 前 축구 선수. 선수 시절 포지션은 윙어.<br><br>
-    브라질의 포르투알레그리에서 태어났다. 8살 때 아버지가 갑자기 돌아가셨다고 한다. 
-    여타 브라질의 축구선수들처럼 가난을 벗어나기 위해 공을 찼겠구나 싶지만, 형 호베르투가 
-    프로 팀인 <a href="https://namu.wiki/w/%EA%B7%B8%EB%A0%88%EB%AF%B8%EC%9A%B0" target="blank" title="나무위키 그레미우"><strong><u>그레미우</u></strong></strong></a>와 계약한 덕에 부유한 어린 시절을 보냈다고 한다. 그도 그럴듯이 그레미우는 
-    브라질에서 최상위급 명문 클럽 중 하나다. 다만 형은 부상때문에 일찍 선수 생활을 접고 지금은 
-    호나우지뉴의 에이전트로 활동 중. <br>
-    대중에게 처음 알려진 것은 13세 때 지역 팀과의 경기에서  <strong>혼자 23골을(?) 넣은 것</strong>이 언론에 보도된 것이었다. 이후 형이 있던 그레미우와 계약해서 어린 나이임에도 두각을 나타내기 시작하고, 1997년 U-17 월드컵에서 세계 축구계에 처음으로 자신의 존재를 알렸다.
-    2002 한일 월드컵에서의 활약으로 신성으로 주목받기 시작했고, 최전성기에는 바르셀로나의 
-    에이스로서 UCL 우승을 이끌며 2005년 <strong>발롱도르</strong>를 수상했다. 이런 경이로운 실력에 특이한 
-    외모, 자주 웃는 모습까지 더해 외계인이라는 별명이 생겼을 정도로 인상적인 캐릭터성을 
-    지니고 있었다. 다만 자기관리 실패로 전성기가 오래 가지 못하였기에 아쉬움도 남는 인물이다.
-    </p>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">개요</a></li>
+            <li><a href="2.html">커리어</a></li>
+            <li><a href="3.html">플레이 스타일</a></li>
+            <li><a href="4.html">본문 출처</a></li>
+        </ol>
+    <div id="article">
+        <h2>개요</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KW_2X10fSSk?si=MiDkGluyHVeJHtCb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+
+        <p>
+            <a href="https://namu.wiki/w/%EB%B8%8C%EB%9D%BC%EC%A7%88" target="blank" title="나무위키 브라질"><strong>브라질</strong></a>의 前 축구 선수. 선수 시절 포지션은 윙어.<br><br>
+            브라질의 포르투알레그리에서 태어났다. 8살 때 아버지가 갑자기 돌아가셨다고 한다. 
+            여타 브라질의 축구선수들처럼 가난을 벗어나기 위해 공을 찼겠구나 싶지만, 형 호베르투가 
+            프로 팀인 <a href="https://namu.wiki/w/%EA%B7%B8%EB%A0%88%EB%AF%B8%EC%9A%B0" target="blank" title="나무위키 그레미우"><strong>그레미우</strong></strong></a>와 계약한 덕에 부유한 어린 시절을 보냈다고 한다. 그도 그럴듯이 그레미우는 
+            브라질에서 최상위급 명문 클럽 중 하나다. 다만 형은 부상때문에 일찍 선수 생활을 접고 지금은 
+            호나우지뉴의 에이전트로 활동 중. <br><br>
+            대중에게 처음 알려진 것은 13세 때 지역 팀과의 경기에서 <strong>23:0</strong>으로 승리했는데,  <strong>혼자 23골을(?) 넣은 것</strong>이 언론에 보도된 것이었다. 이후 형이 있던 그레미우와 계약해서 어린 나이임에도 두각을 나타내기 시작하고, 1997년 U-17 월드컵에서 세계 축구계에 처음으로 자신의 존재를 알렸다.
+            2002 한일 월드컵에서의 활약으로 신성으로 주목받기 시작했고, 최전성기에는 바르셀로나의 
+            에이스로서 UCL 우승을 이끌며 2005년 <strong>발롱도르</strong>를 수상했다. 이런 경이로운 실력에 특이한 
+            외모, 자주 웃는 모습까지 더해 외계인이라는 별명이 생겼을 정도로 인상적인 캐릭터성을 
+            지니고 있었다.
+        </p>
+    </div>
+    </div>
 </body>
 </html>
